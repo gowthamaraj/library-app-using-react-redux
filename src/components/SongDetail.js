@@ -3,15 +3,15 @@ import {connect} from "react-redux";
 
 const SongDetail = ({song})=>{
     if(!song){
-        return <div>Please select something!!!</div>
+        return <div className="ui piled segment">Please select something!!!</div>
     }
     return (
-    <div>
+    <div className="ui piled segment">
         <h3>Details for:</h3>
         <p>
-            Title:{song.title}
+            Title :{song.title}
             <br/>
-            Duration: {song.duration}
+            Shelf: {song.Shelf}
         </p>
     </div>
     )

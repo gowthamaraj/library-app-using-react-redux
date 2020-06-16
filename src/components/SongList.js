@@ -6,13 +6,13 @@ class SongList extends Component{
     renderList(){
         return this.props.songs.map((song)=>{
             return(
-                <div className="item" key={song.title}>
-                    <div className="right floated content">
+                <div className="ui item" key={song.title}>
+                    <div className="right floated message">
                         <button 
-                        className="ui button primary"
+                        className="ui button secondary"
                         onClick={()=>this.props.selectSong(song)}
                         >
-                            Select
+                            Find It!
                         </button>
                     </div>
                     <div className="content">{song.title}</div>
